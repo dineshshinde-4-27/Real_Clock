@@ -1,13 +1,13 @@
 setInterval(() => {
     let d = new Date();
-    hTime = d.getHours();
-    mTime = d.getMinutes();
-    sTime = d.getSeconds();
-    msTime = d.getMilliseconds();
+     let hTime = d.getHours();
+     let mTime = d.getMinutes();
+     let sTime = d.getSeconds();
+     let msTime = d.getMilliseconds();
 
-    hRotation = (30 * hTime + mTime / 2) + 0.0084 * sTime;
-    mRotation = 6 * mTime + 0.1 * sTime;
-    sRotation = 6 * sTime + 0.006 * msTime;
+     let hRotation = (30 * hTime + mTime / 2) + 0.0084 * sTime;
+     let mRotation = 6 * mTime + 0.1 * sTime;
+     let sRotation = 6 * sTime + 0.006 * msTime;
     console.log(mRotation);
     console.log(hRotation);
     console.log(sRotation);
@@ -15,4 +15,4 @@ setInterval(() => {
     minute.style.transform = `rotate(${mRotation}deg)`;
     second.style.transform = `rotate(${sRotation}deg)`;
 
-}, 1);
+}, 1000);
