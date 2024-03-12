@@ -15,4 +15,4 @@ setInterval(() => {
     minute.style.transform = `rotate(${mRotation}deg)`;
     second.style.transform = `rotate(${sRotation}deg)`;
 
-}, 1000);
+}, 1);
